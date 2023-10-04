@@ -1,0 +1,25 @@
+build/
+Temp/
+Library/
+UserSettings/
+clips/
+**/.vs/
+**/obj/
+**/bin/
+**/Logs/
+
+.DS_Store
+._.DS_Store
+*.DotSettings.user
+._*.txt
+*.ide
+.idea/
+builds/
+*.csproj
+*.sln
+
+*.log
+
+tb_unity_2021/ProjectSettings/RiderScriptEditorPersistedState.asset
+tb_unity_2021/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+tb_unity_2021/ServerData/
