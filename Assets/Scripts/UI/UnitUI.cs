@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UnitUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Button unitAttackButton;
+    [SerializeField] private Button unitApplyRandomBuffButton;
+    [SerializeField] private BuffSystemUI buffSystemUI;
 
-    // Update is called once per frame
-    void Update()
+    public void Initialize(Unit unit, Unit target, BuffManager buff_manager)
     {
-        
+        unitAttackButton.onClick.AddListener( () => unit.Attack(target));
+        unitApplyRandomBuffButton.onClick.AddListener(()=> unit.ApplyRandomBuff(buff_manager));
     }
 }
